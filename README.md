@@ -3,7 +3,7 @@ class_moving_series.py:  创建移动特征的类。其中包括: 创建移动�
 
 create_time_feature.py，create_time_feat_one_hot.py：创建与时间相关的特征，后者在前者基础上进行了one_hot处理。
 
-operate_influxdb.py: 操作influxdb数据库。实现数据的的增删查，以及返回数据格式的转换。 其中query可以输入指令对influxdb的数据进行查询，query_df返回查询后的dataframe，query_all_df返回查询后的measurement 的所有数据，insert_points插入单个数据，insert_df插入整个dataframe，show_all_tables，drop_tables都如其名。
+operate_influxdb.py: 操作influxdb数据库。实现数据的的增删查，查询数据返回格式转换为pandas中的dataframe格式。
 
 lstm.py、main_LSTM.py: Long Short Term Mermory network, 用于时序预测的类。
 
